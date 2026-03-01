@@ -1,0 +1,31 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: sans-serif;
+}
+#main-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+#map {
+  flex: 1 1 60%;
+}
+#panel {
+  flex: 1 1 40%;
+  background: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  border-top: 2px solid #ccc;
+}
+#tabs { display: flex; }
+.tab {
+  flex: 1;
+  padding: 10px;
+  background: #eee;
+  border: none;
+  cursor: pointer;
+}
+.tab.active { background: #fff; font-weight: bold; }
+#tab-content { padding: 10px; overflow-y: auto; flex: 1; }
